@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/cssgaleria.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/css.css" type="text/css" rel="stylesheet">
+    <link href="css/formulario.css" type="text/css" rel="stylesheet">   
+    <title>Contacto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="js/funciones.js"></script>
+    <!--Validacion de formulario-->
+
+</head>
+<body>
+        <style>
+                .banner-image{
+                    background-image: url('imagenes/fondo-nav.jpg');
+                    background-size: cover;
+                }
+            </style>
+            <!-- Navbar-->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand" >Black Hole</a>
+                    <button type="button" class="navbar-toggler" data-target="#navbarNav" 
+                    data-toggle="collapse" aria-controls="navbarNav" aria-lable="toggle Navbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-white">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="QuienesSomos.html" class="nav-link text-white">¿Quiénes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Galeria.html" class="nav-link text-white">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a href="registro.html" class="nav-link text-white">Iniciar sesion</a>
+                                </li>
+                            <li class="nav-item">
+                                    <a href="contactanos.html" class="nav-link text-white">Contactanos</a>
+                                </li>
+                        </ul>
+                    </div>
+            
+                </div>
+            </nav>
+            
+            <!-- Banner Imagen -->
+            <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+                <div class="content text-center">
+                    <h1 class="text-white">Black Hole <br><span class="clima text-withe"></span></h1>
+                    
+                    
+                </div>
+            </div>                
+        
+                  
+        <div class="container-fluid" id="container-total">
+            <!--Dudas-->
+            <div class="row">
+                            
+                <div class="col-8">
+                    <div class="container" >                                              
+                        <h3 class="text-white">Manifiesta tus dudas</h3>
+                        
+                        <form name="dudas"  action="index.html" id="dudas"   method="post">  
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="tipoduda" class="text-white">Tipo de consulta*</label><br>
+                                    <select class="form-control-sm" id="tipoduda" name="dudatipo" required><br><br><hr>
+                                        <option name="dudatipo" value "1">Problemas en una compra</option>
+                                        <option name="dudatipo" value "2">Problemas con mi cuenta</option>
+                                        <option name="dudatipo" value "3">Problemas con la empresa</option>
+                                        <option name="dudatipo" value "4">Consultas Generales</option>
+                                        <option name="dudatipo" value "5">Otro motivo</option></select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="correo" class="text-white">Email*</label><br>                       
+                                    <input class="form-control-sm" type="mail" id="correo" name="correo" placeholder="Ingrese su correo" autofocus required><br><br>
+                                    <label for="nombre" class="text-white">Nombre completo*</label><br>                       
+                                    <input class="form-control-sm" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" autofocus required><br><br>                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">                            
+                                    <label for="mensaje" class="text-white">Redacta tu consulta:</label><br>
+                                    <textarea class="form-control-sm" id="mensaje" name="mensaje" cols="80" rows="5" placeholder="Escribe aquí todas tus dudas..."></textarea>           
+                                </div> 
+                            </div>
+                            <br>
+                            <button class="btn btn-outline-info">Enviar Consultas</button><br><br>
+                        </form>
+                    
+                        <div  id="containerbh">         
+                            <h5>Como cliente Black Hole podrás...</h5>
+                            <hr>
+                                <p>
+                                    <ul>
+                                        <li>Realizar compras en línea pagando con Webpay</li>    
+                                        <li>Ver el historial y el estado de tus órdenes de compra</li>  
+                                        <li>Recibir ofertas y novedades en tu correo electrónico</li>    
+                                    </ul>
+                                </p> 
+                        </div>        
+                    </div>
+                </div>
+                <div class="col-4">
+                        <div class="container">
+                            
+                            <img src="imagenes/caja.png" width="40px" height="40px" class="asd" >
+                            <h6 class="text-white">DESPACHOS A TODO CHILE A TRAVÉS <br>  DE CHILEXPRESS Y TURBUS</h6>
+                            <img src="imagenes/candado.png" width="40px" height="40px" class="asd" >
+                            <h6 class="text-white"> BLACK HOLE CUENTA CON CERTIFICADO SSL,<br>PARA MANTENER TU INFORMACIÓN 100% SEGURA</h6>
+                            <img src="imagenes/pregunta.png" width="40px" height="40px" class="asd" >
+                            <h6 class="text-white"> 	
+                                    ¿NECESITAS AYUDA?                                   
+                                    <BR>                                    
+                                    COMUNICATE CON NOSOTROS </h6>
+                            <img src="imagenes/pago.png" width="300px" height="350px">
+                        </div>
+       
+                </div>                          
+            </div>
+            
+            <hr><br><br>
+            <div  id="containerbh">         
+                <script language="Javascript"> 
+	            document.write("Bienvenido a Black Hole visitante de "+geoplugin_city()+","+geoplugin_region()+", "+geoplugin_countryName()); 
+                </script>
+            </div>
+            
+
+        </div>
+
+    
+    
+                
+            
+
+           
+<!--Footer-->    
+            <footer>
+                <div class="container-footer-all">
+                    <div class="container-body">
+                        <div class="colum1">
+                            <h1>Más información de<br> la compañia</h1>
+                            <p>Esta compañia se dedica a la <br>venta de Equipos informaticos,<br>
+                            partes y elemenos electronicos.
+                            </p>
+                        </div>
+              
+                        <div class="colum2">
+                            <h1>Redes sociales</h1>
+                            <div class="row3">
+                                <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/face.png" ></a>
+                                <label> Síguenos en Facebook</label>
+                            </div>
+                            <div class="row3">
+                              <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/insta.png" ></a>
+                                <label> Síguenos en Instagram</label>
+                            </div>
+                            <div class="row3">
+                              <a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twitter.png"></a>
+                                <label> Síguenos en Twitter</label>
+                            </div>
+                        </div>
+              
+                        <div class="colum3">
+                            <h1>Información de Contacto</h1>
+                            <div class="row2">
+                                <img src="imagenes/house.png">
+                                <label>Teresa Vial 1137,<br> San Miguel</label>
+                            </div>
+                            <div class="row2">
+                                <img src="imagenes/cellphone.png">
+                                <label>+56 2 400<br> 200 6000</label>
+                            </div>
+                            <div class="row2">
+                                <img src="imagenes/gmail.png">
+                                <label>Experiencia1<br>@blackhole.cl</label>
+                            </div>
+                        </div>
+                    </div> 
+              
+                    <div class="container-footer">
+                        <div class="copyright">
+                            Maickol Moreira, Alexis Barrueto y Andrés Castillo &#169 Derechos reservados a Black Hole 2021
+                        </div>
+                        <div class="terminos">
+                            <a href="QuienesSomos.html">Información de la compañia </a>
+                        </div>
+                    </div>
+                </div>
+              </footer>
+              <script src="js/bootstrap.bundle.min.js"> </script>
+                      <script type="text/javascript">
+                          var nav = document.querySelector('nav');
+                    
+                          window.addEventListener('scroll', function () {
+                            if (window.pageYOffset > 100) {
+                              nav.classList.add('bg-dark', 'shadow');
+                            } else {
+                              nav.classList.remove('bg-dark', 'shadow');
+                            }
+                          });
+                        </script>
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>                    
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+                    
+                   
+                      
+    </body>
+</html>
